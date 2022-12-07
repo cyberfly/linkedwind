@@ -5,10 +5,10 @@
 
 ### Demo
 
-https://play.tailwindcss.com/9oW53BEICP?layout=preview
+https://cyberfly.github.io/linkedwind/
 ### Live Edit
 
-https://play.tailwindcss.com/9oW53BEICP?layout=preview
+https://play.tailwindcss.com/JjiilQ4XUP?layout=preview
 
 ## Development
 
