@@ -1,6 +1,6 @@
 ## Linkedwind
 
-- Linkedin clone using Tailwind CSS. For learning purpose only
+- LinkedIn clone using Tailwind CSS. For learning purpose only
 - HTML version only, React version coming soon
 
 ### Demo
@@ -19,3 +19,7 @@ npx tailwindcss -i ./src/app.css -o ./dist/app.css --watch
 ```
 
 For live reload, serve using VS Code Live Server extension
+
+## Tailwind CSS training
+
+Do you want to learn Tailwind CSS by building this exact same site? Contact me integrasolid@gmail.com and I will be happy to coach you
