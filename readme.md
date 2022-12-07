@@ -5,7 +5,10 @@
 
 ### Demo
 
-https://play.tailwindcss.com/fQNCG30aDu?layout=preview
+https://play.tailwindcss.com/9oW53BEICP?layout=preview
+### Live Edit
+
+https://play.tailwindcss.com/9oW53BEICP?layout=preview
 
 ## Development
 
