@@ -8,7 +8,7 @@
 https://cyberfly.github.io/linkedwind/
 ### Live Edit
 
-https://play.tailwindcss.com/JjiilQ4XUP?layout=preview
+https://play.tailwindcss.com/5RExvcgHaC?layout=preview
 
 ## Development
 
