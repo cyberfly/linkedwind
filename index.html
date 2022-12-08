@@ -7,7 +7,9 @@
   </head>
   <body>
     <div class="min-h-screen bg-[#f3f2ef] pb-10">
-      <header class="sticky top-0 z-50 overflow-hidden border-b bg-white">
+      <header
+        class="sticky py-2 md:py-0 top-0 z-50 overflow-hidden border-b bg-white"
+      >
         <div
           class="mx-auto flex max-w-screen-xl items-center px-4 md:justify-between"
         >
@@ -22,9 +24,9 @@
               </div>
             </a>
 
-            <div class="ml-4">
+            <div class="md:ml-4">
               <input
-                class="hidden w-72 rounded-md bg-purple-50 px-2 py-2 text-sm lg:block"
+                class="hidden md:block lg:w-72 rounded-md bg-purple-50 px-2 py-2 text-sm"
                 type="text"
                 name=""
                 id=""
@@ -360,14 +362,14 @@
                 alt="avatar"
               />
               <div
-                class="w-full cursor-pointer rounded-full border border-gray-300 py-3 px-4 text-sm font-semibold text-gray-600 hover:bg-gray-200"
+                class="w-full cursor-pointer rounded-full border border-gray-400 py-3 px-4 text-sm font-semibold text-gray-600 hover:bg-gray-200"
               >
                 Start a post
               </div>
             </div>
-            <div class="flex flex-wrap py-2 md:space-x-4">
+            <div class="flex flex-wrap justify-evenly py-2 md:space-x-4">
               <button
-                class="flex flex-1 items-center justify-center space-x-2 rounded py-2 hover:bg-gray-100"
+                class="flex items-center justify-center space-x-2 rounded px-2 py-2 hover:bg-gray-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -385,7 +387,7 @@
                 <span class="text-sm font-semibold text-gray-600">Photo</span>
               </button>
               <button
-                class="flex flex-1 items-center justify-center space-x-2 rounded py-2 hover:bg-gray-100"
+                class="flex items-center justify-center space-x-2 rounded px-2 py-2 hover:bg-gray-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -401,7 +403,7 @@
                 <span class="text-sm font-semibold text-gray-600">Video</span>
               </button>
               <button
-                class="flex flex-1 items-center justify-center space-x-2 rounded py-2 hover:bg-gray-100"
+                class="flex items-center justify-center space-x-2 rounded px-2 py-2 hover:bg-gray-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -424,7 +426,7 @@
                 >
               </button>
               <button
-                class="flex flex-1 items-center justify-center space-x-2 rounded py-2 hover:bg-gray-100"
+                class="flex items-center justify-center space-x-2 rounded px-2 py-2 hover:bg-gray-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -484,7 +486,7 @@
                     src="https://avatars.dicebear.com/api/miniavs/haz.svg"
                     alt="avatar"
                   />
-                  <p class="text-sm">
+                  <p class="text-xs">
                     <a class="font-medium" href="#">Muhammad Hazeeq</a>
                     <span class="text-gray-500">likes this</span>
                   </p>
@@ -504,18 +506,18 @@
 
                   <div class="flex flex-1 items-center">
                     <div class="flex-1">
-                      <div class="flex items-center space-x-1">
+                      <div class="flex items-center space-x-1 text-sm">
                         <div class="font-medium">Ahmad Albab</div>
                         <div class="h-1 w-1 rounded-full bg-gray-300"></div>
                         <div class="text-gray-600">2nd</div>
                       </div>
                       <div class="flex items-center justify-between">
-                        <span class="text-sm text-gray-500"
+                        <span class="text-xs text-gray-500"
                           >Founder & CEO at YesYes Sdn Bhd</span
                         >
                       </div>
                       <div
-                        class="flex items-center space-x-1 text-sm text-gray-500"
+                        class="flex items-center space-x-1 text-xs text-gray-500"
                       >
                         <span>1h</span>
                         <div class="h-1 w-1 rounded-full bg-gray-300"></div>
@@ -585,9 +587,9 @@
               </div>
 
               <!-- post action -->
-              <div class="flex space-x-2 py-2 font-medium text-gray-600">
+              <div class="flex py-2 font-medium text-gray-600">
                 <button
-                  class="flex flex-1 items-center justify-center space-x-2 rounded py-3 hover:bg-gray-100"
+                  class="flex-1 flex items-center justify-center space-x-2 rounded px-4 py-3 hover:bg-gray-100"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -604,10 +606,10 @@
                     />
                   </svg>
 
-                  <span>Like</span>
+                  <span class="hidden min-[500px]:inline">Like</span>
                 </button>
                 <button
-                  class="flex flex-1 items-center justify-center space-x-2 rounded py-3 hover:bg-gray-100"
+                  class="flex-1 flex items-center justify-center space-x-2 rounded px-4 py-3 hover:bg-gray-100"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -624,10 +626,10 @@
                     />
                   </svg>
 
-                  <span>Comment</span>
+                  <span class="hidden min-[500px]:inline">Comment</span>
                 </button>
                 <button
-                  class="flex flex-1 items-center justify-center space-x-2 rounded py-3 hover:bg-gray-100"
+                  class="flex-1 flex items-center justify-center space-x-2 rounded px-4 py-3 hover:bg-gray-100"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -644,27 +646,23 @@
                     />
                   </svg>
 
-                  <span>Repost</span>
+                  <span class="hidden min-[500px]:inline">Repost</span>
                 </button>
                 <button
-                  class="flex flex-1 items-center justify-center space-x-2 rounded py-3 hover:bg-gray-100"
+                  class="flex-1 flex items-center justify-center space-x-2 rounded px-4 py-3 hover:bg-gray-100"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="h-6 w-6"
+                    fill="currentColor"
+                    class="w-6 h-6"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+                      d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
                     />
                   </svg>
 
-                  <span>Send</span>
+                  <span class="hidden min-[500px]:inline">Send</span>
                 </button>
               </div>
               <!-- end post action -->
@@ -875,16 +873,16 @@
 
                   <div class="flex flex-1 items-center">
                     <div class="flex-1">
-                      <div class="flex items-center space-x-1">
+                      <div class="flex items-center space-x-1 text-sm">
                         <div class="font-medium">Mohamad Afiq</div>
                         <div class="h-1 w-1 rounded-full bg-gray-300"></div>
                         <div class="text-gray-600">1st</div>
                       </div>
                       <div class="flex items-center justify-between">
-                        <span class="text-sm text-gray-500">IT Recruiter</span>
+                        <span class="text-xs text-gray-500">IT Recruiter</span>
                       </div>
                       <div
-                        class="flex items-center space-x-1 text-sm text-gray-500"
+                        class="flex items-center space-x-1 text-xs text-gray-500"
                       >
                         <span>4h</span>
                         <div class="h-1 w-1 rounded-full bg-gray-300"></div>
@@ -918,9 +916,9 @@
               </div>
 
               <!-- post action -->
-              <div class="flex space-x-2 py-2 font-medium text-gray-600">
+              <div class="flex py-2 font-medium text-gray-600">
                 <button
-                  class="flex flex-1 items-center justify-center space-x-2 rounded py-3 hover:bg-gray-100"
+                  class="flex-1 flex items-center justify-center space-x-2 rounded px-4 py-3 hover:bg-gray-100"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -937,10 +935,10 @@
                     />
                   </svg>
 
-                  <span>Like</span>
+                  <span class="hidden min-[500px]:inline">Like</span>
                 </button>
                 <button
-                  class="flex flex-1 items-center justify-center space-x-2 rounded py-3 hover:bg-gray-100"
+                  class="flex-1 flex items-center justify-center space-x-2 rounded px-4 py-3 hover:bg-gray-100"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -957,10 +955,10 @@
                     />
                   </svg>
 
-                  <span>Comment</span>
+                  <span class="hidden min-[500px]:inline">Comment</span>
                 </button>
                 <button
-                  class="flex flex-1 items-center justify-center space-x-2 rounded py-3 hover:bg-gray-100"
+                  class="flex-1 flex items-center justify-center space-x-2 rounded px-4 py-3 hover:bg-gray-100"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -977,27 +975,23 @@
                     />
                   </svg>
 
-                  <span>Repost</span>
+                  <span class="hidden min-[500px]:inline">Repost</span>
                 </button>
                 <button
-                  class="flex flex-1 items-center justify-center space-x-2 rounded py-3 hover:bg-gray-100"
+                  class="flex-1 flex items-center justify-center space-x-2 rounded px-4 py-3 hover:bg-gray-100"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="h-6 w-6"
+                    fill="currentColor"
+                    class="w-6 h-6"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+                      d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
                     />
                   </svg>
 
-                  <span>Send</span>
+                  <span class="hidden min-[500px]:inline">Send</span>
                 </button>
               </div>
               <!-- end post action -->
@@ -1281,7 +1275,7 @@
 
               <div class="flex-1 border-b py-2 pl-2">
                 <div class="flex justify-between">
-                  <h4 class="text-sm font-semibold">Alia</h4>
+                  <h4 class="text-sm font-semibold">Aisha</h4>
 
                   <span class="text-xs font-semibold">5.58 PM</span>
                 </div>
